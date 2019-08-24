@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "build": "truffle compile && rm -rf ../frontend/src/contracts/ && cp -r ./build/contracts ../frontend/src/"
+  },
   "dependencies": {
+    "@openzeppelin/contracts": "^2.3.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1"
   }
